@@ -23,10 +23,40 @@
 	<div class="container pt-">
 		<h1>Game of Life</h1>
 		<div class="text-center mt-2">
-			<input type="button" class="btn btn-primary" id="buttonStartStop" value="Start Reproducing" />
-			<input type="button" class="btn btn-secondary" id="buttonReset" value="Reset World" />
+			<input type="button" class="btn btn-primary" id="startStopButton" value="Start Reproducing" />
+			<input type="button" class="btn btn-secondary" id="resetButton" value="Reset World" />
+			<input type="button" class="btn btn-secondary" id="settingsButton" value="Setting" />
 		</div>
 		<div id="world"></div>
+	</div>
+	<div class="modal" tabindex="-1" id="settingsModal">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Settings</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6 mb-2">
+							<label for="rows" class="form-label">Rows</label>
+							<input type="number" class="form-control" step="1" min="1" id="rows" value="40" />
+						</div>
+						<div class="col-md-6 mb-2">
+							<label for="cols" class="form-label">Cols</label>
+							<input type="number" class="form-control" step="1" min="1" id="cols" value="40" />
+						</div>
+						<div class="col-md-6 mb-2">
+							<label for="evolutionSpeed" class="form-label">Evolution Speed</label>
+							<input type="number" class="form-control" step="1" min="1" id="evolutionSpeed" value="500" />
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" id="changeSettingsButton">Change Settings</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script src="/js/gol.js"></script>
