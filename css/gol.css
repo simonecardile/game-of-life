@@ -1,0 +1,32 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-image: url("/img/space.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+table {
+	background-image: url(/img/arid.jpg);
+}
+
+#world {
+	padding-bottom: 10px;
+}
+
+td {
+	border: 1px solid darkgray;
+	width: 10px;
+	height: 10px;
+}
+
+td.dead {
+	background-color: transparent;
+}
+
+td.alive {
+	background-color: #7CAB3C;
+}
