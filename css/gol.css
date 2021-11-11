@@ -9,24 +9,21 @@ body {
 	background-size: cover;
 }
 
-table {
+#world {
+	padding-bottom: 10px;
 	background-image: url(/img/arid.jpg);
 }
 
-#world {
-	padding-bottom: 10px;
-}
-
-td {
+#world td {
 	border: 1px solid darkgray;
 	width: 10px;
 	height: 10px;
 }
 
-td.dead {
+#world td.dead {
 	background-color: transparent;
 }
 
-td.alive {
+#world td.alive {
 	background-color: #7CAB3C;
 }
