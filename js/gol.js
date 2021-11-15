@@ -43,7 +43,6 @@ function createWorld() {
 	let world = document.querySelector('#world');
 	world.innerHTML = '';
 	world.classList.add('table-responsive');
-	world.classList.add('mt-3');
 	let tbl = document.createElement('table');
 	tbl.setAttribute('id', 'worldGridTable');
 	tbl.setAttribute('class', 'table');
@@ -75,8 +74,9 @@ function createGenArrays() {
 function initGenArrays() {
 	for (let i = 0; i < rows; i++) {
 		for (let j = 0; j < cols; j++) {
-			currGen[i][j] = 0;
-			nextGen[i][j] = 0;
+			let ramdonValue = Math.round(Math.random() * 1);
+			currGen[i][j] = ramdonValue;
+			nextGen[i][j] = ramdonValue;
 		}
 	}
 }
